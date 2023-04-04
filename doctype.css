@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+}
+:root{
+    --text : 1rem;
+    --head : calc(1rem + 6vh);
+    --bg-color:rgba(0, 0, 255, 0.94);
+
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero-text{
+    min-height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(9, 9, 168);
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    animation:none;
+}
+.navigate{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0rem 1.4rem;
+    color: rgba(255, 255, 0, 0.947);
+    transform: translateY(-100%);
+    animation: movedown 850ms ease-in 1s forwards;
+
+}
+
+@keyframes movedown{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.list ul{
+    list-style: none;
+}
+.list ul li{
+    font-size: x-large;
+    padding: 1rem;
+
+}
+.list ul li a{
+    text-decoration:dashed;
+    color:rgb(221, 255, 0);
+}
+
+.list ul li a:hover{
+    border-bottom: 1px solid rgb(229, 255, 0);
+
+}
+
+.list{
+    justify-content: left;
+    padding: 2rem;
+    padding-left: 3.5rem;
+    padding-top: 4rem;
+    padding-right: 0rem;
+}
+
+.navigate ul{
+    list-style: none;
+
+}
+.navigate ul li{
+    display: inline-block;
+    margin-left: 5rem;
+    font-size: var(--text);
+}
+
+.navigate ul li a{
+    text-decoration: none;
+    color: rgb(255, 247, 0);
+    font-size: 19px;
+}
+
+.navigate ul li a:hover{
+    border-bottom: 1 px solid rgb(255, 238, 0);
+}
+
+
+.hero-text h4{
+    color:rgba(255, 255, 255, 0.97);
+    height: 0vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-left: 0rem;
+    padding-top: 0rem;
+}
+
+.overview{
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+}
+
+.overview h1{
+    color:rgb(255, 255, 255);
+    font-size: xx-large;
+    padding-bottom: 0rem;
+    font-size: 100px;
+    display: flex;
+    padding-top: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.overview h5{
+    color: orange;
+    font-size:230px;
+    display:flex;
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: large;
+    padding-bottom: 4rem;
+    /*border: 1px solid black*/
+
+}
+
+.overview h5+p{
+    padding-top: 0rem;
+    font-size: large;
+    color:rgba(157, 255, 0, 0.964);
+    height: 0vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-indent: 4%;
+    margin: 12px 12px 120px 13px;
+}
+@keyframes slide{
+    from{
+        transform: translateX(-100%);  
+    }
+    to{
+        transform:translateX(0%);
+    }
+}
+
+.overview a{
+    color:orange;
+    background: var(--bg color);
+    font-weight:100;
+    font-size: var(--text);
+    padding: 0.6rem;
+    margin: 0.8rem auto;
+    display: block;
+    transition:inherit;
+    border: 3px solid orangered;
+
+}
+
+.overview a:hover{
+    opacity: 0.6;
+}
+
+.overview h2{
+    font-size: var(--head);
+}
+
+.overview{
+    font-size: 4rem;
+}
